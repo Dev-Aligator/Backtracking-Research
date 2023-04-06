@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Constraint satisfaction problems (CSPs)}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Brute-force}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Complete Search - Backtracking}{8}{0}{1}
+\beamer@sectionintoc {2}{Problems}{20}{0}{2}
