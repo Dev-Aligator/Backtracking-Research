@@ -94,7 +94,7 @@
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-\usepackage{xmpmulti}
+
 %\usepackage{helvet} % Use the Helvetica font for sans serif text
  % Use the Open Sans font for sans serif text
 %\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
@@ -190,7 +190,7 @@
 %	PRESENTATION BODY SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Introduction} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
+\section{Preliminaries} % Sections are added in order to organize your presentation into discrete blocks, all sections and subsections are automatically output to the table of contents as an overview of the talk but NOT output in the presentation as separate slides
 \begin{frame}
 	\frametitle{Table of Contents}
 
@@ -241,7 +241,11 @@
         \item There is a single constraint: $x + y = z$
     \end{itemize}
 \end{frame}
-
+\section{Backtracking Algotithm}
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+\end{frame}
 \subsection{Brute-force}
 \begin{frame}
 	\frametitle{Brute-force Approach}
@@ -259,7 +263,7 @@
 \begin{frame}
     \frametitle{Complete Search - Backtracking}
     \begin{center}
-    \multiinclude[<+>][format=png,start=1, graphics={scale=0.3}]{Figs/trasition/}
+        \includegraphics[scale=0.5]{Figs/backtracking.png}
     \end{center}
 \end{frame}
 \begin{frame}
@@ -276,11 +280,15 @@
 	\frametitle{Complete Search - Backtracking}
     \begin{figure}
         \centering
-        \includegraphics[scale=0.4]{Figs/pcode_1.png}
+        \includegraphics[scale=0.3]{Figs/pcode_1.png}
         \end{figure}
         
 \end{frame}
 \section{Problems}
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+\end{frame}
 \begin{frame}
 	\frametitle{N-queens problem}
 	The N-Queens problem is a classic problem in computer science and mathematics that involves placing N chess queens on an N x N chessboard such that no two queens attack each other.
@@ -309,6 +317,63 @@
     \end{figure}
 \end{frame}
 
+\section{Optimization}
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+\end{frame}
 
+\begin{frame}
+    \frametitle{Benefits and Drawbacks of Backtracking}
+    \large{\textcolor{blue}{\textbf{Benefits}}}
+    \bigskip
+	\begin{itemize}
+		\item Backtracking is a more intelligent and efficient way of searching through large solution spaces than brute-force;
+		\bigskip
+		\item Backtracking problems are very intuitive to code;
+	\end{itemize}
+	\bigskip
+	\large{\textcolor{red}{\textbf{Drawbacks}}}
+    \bigskip
+	\begin{itemize}
+		\item In the worst case where all possible solutions must be explored, Backtracking has the same worst-case time \& space complexity as Brute-force;
+		\bigskip
+		\item Backtracking is complete but not guaranteed to find optimal solution, or just sub-optimal;
+	\end{itemize}
+    
+\end{frame}
 
+\begin{frame}
+    \frametitle{Improvements to backtracking}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item Backtracking usually suffers from thrashing, namely, rediscovering the same inconsistencies and the same partial successes during search.
+            \bigskip
+            \item Efficient cures for such behavior in all cases are unlikely, since the problem is NP-hard.
+        \end{itemize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.3]{Figs/improve.png}
+        \end{figure}
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame} 
+    \frametitle{Filtering}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{Figs/filtering.png}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Ordering}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{Figs/ordering.png}
+    \end{figure}
+\end{frame}
 \end{document} 
