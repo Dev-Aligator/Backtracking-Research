@@ -8,7 +8,7 @@ We hope you find these resources helpful in your studies and research.
 ## Usage
 - The `slides` directory contains the slides used for the discussion, which can be accessed at [slide/backtrack.pdf](slide/backtracking.pdf). 
 - The `src` directory contains detailed and advanced documents on backtracking which can be found at [here](src/main.pdf).
-- The `visualiser` directory contains the website source code for visualization of the solution of CSPs. These visualizations provide a graphical representation of the solutions to CSP problems.
+- The `visualiser` directory contains the website source code for visualization of the solution of CSPs. These visualizations provide a graphical representation of the solutions to CSP problems, which could be accessed [here](https://nguyenhoangtankhcl.github.io/).
 ## Contributions
 Contributions to this repository are welcome and appreciated! If you have any suggestions, corrections, or additions, please submit a pull request or create an issue.
 
